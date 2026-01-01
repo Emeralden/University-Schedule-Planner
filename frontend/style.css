@@ -1,0 +1,207 @@
+/* GENERAL PAGE STYLE */
+body {
+    font-family: Arial, sans-serif;
+    background: #eeedf9;
+    margin: 0;
+    padding: 0;
+}
+
+/* CENTERED CONTENT WRAPPER */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* PAGE TITLE */
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+/* BLOCK SECTIONS */
+.block {
+    background: white;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* FIELDSET TITLE */
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* LABEL STYLING */
+.block label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+
+/* INPUT FIELDS */
+.block input {
+    display: block;
+    padding: 10px;
+    width: 300px;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTONS */
+button {
+    padding: 8px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    background: #574a94;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #574a94;
+}
+
+/* LIST TITLES */
+.list-title {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* LIST BOXES */
+.list-box {
+    background: #f5f3fc;
+    padding: 15px;
+    min-height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+
+#add-course-btn {
+    display: block;
+    margin-top: 15px;
+}
+
+/* SELECT DROPDOWNS */
+.block select {
+    display: block;
+    padding: 10px;
+    width: 320px;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+}
+
+
+/* SOLVE BUTTON */
+#solve-btn {
+    width: 100%;
+    font-size: 22px;
+    padding: 14px;
+    margin-top: 30px;
+}
+
+/* STATUS DISPLAY */
+#status {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* TIMETABLE GRID */
+#timetable-grid {
+    margin-top: 25px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* TABLE STYLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#timetable-grid {
+    overflow-x: auto;
+}
+
+#timetable-grid table {
+    margin: 0 auto;
+}
+
+
+#timetable-grid table th,
+#timetable-grid table td {
+    white-space: nowrap;
+}
+
+
+td, th {
+    border: 1px solid #bbb;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+th {
+    background: #eeedf9;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* EXPLANATION PANEL */
+#explanations {
+    margin-top: 25px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#explanations h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+}
+
+#explanations ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#explanations li {
+    margin: 6px 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+
+

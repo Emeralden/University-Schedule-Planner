@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>University Schedule Planner</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>University Schedule Planner</h1>
+
+    <!-- TIMESLOTS SECTION -->
+    <fieldset class="block">
+        <legend>Define Time Slots</legend>
+
+        <label for="slot-day">Day</label>
+        <input id="slot-day" type="text" placeholder="e.g. Mon" />
+
+        <label for="slot-start">Start Time</label>
+        <input id="slot-start" type="time" />
+
+        <label for="slot-end">End Time</label>
+        <input id="slot-end" type="time" />
+
+        <button id="add-slot-btn">Add Slot</button>
+
+        <label>Upload TimeSlots JSON</label>
+        <input type="file" id="slot-json" accept=".json">
+
+
+        <div class="list-title">Time Slots:</div>
+        <div id="timeslot-list" class="list-box"></div>
+    </fieldset>
+
+    <!-- PROFESSORS SECTION -->
+    <fieldset class="block">
+        <legend>Add Professor</legend>
+
+        <label for="prof-name">Name</label>
+        <input id="prof-name" type="text" required />
+
+        <label for="prof-unavail">Unavailable Slots (comma-separated)</label>
+        <input id="prof-unavail" type="text" placeholder="e.g. 1,3" />
+
+        <label for="prof-preferred">Preferred Slot IDs (comma separated)</label>
+        <input type="text" id="prof-preferred" placeholder="e.g. 1,3,5">
+
+        <label for="prof-hated">Hated Slot IDs (comma separated)</label>
+        <input type="text" id="prof-hated" placeholder="e.g. 2">
+
+
+        <button id="add-prof-btn">Add Professor</button>
+
+        <div class="upload-box">
+            <label>Upload Professors JSON:</label>
+            <input type="file" id="prof-json" accept="application/json" />
+        </div>
+
+        <div class="list-title">Professors:</div>
+        <div id="professor-list" class="list-box"></div>
+    </fieldset>
+
+
+    <!-- ROOMS SECTION -->
+    <fieldset class="block">
+        <legend>Add Venue</legend>
+
+        <label for="room-name">Name</label>
+        <input id="room-name" type="text" required />
+
+        <label for="room-cap">Capacity</label>
+        <input id="room-cap" type="number" min="1" required />
+
+        <button id="add-room-btn">Add Venue</button>
+
+        <div class="upload-box">
+            <label>Upload Venues JSON:</label>
+            <input type="file" id="room-json" accept="application/json" />
+        </div>
+
+        <div class="list-title">Venues:</div>
+        <div id="room-list" class="list-box"></div>
+    </fieldset>
+
+
+    <!-- COURSES SECTION -->
+    <fieldset class="block">
+        <legend>Add Course</legend>
+
+        <label for="course-name">Course Name</label>
+        <input id="course-name" type="text" required />
+
+        <label for="course-enroll">Enrollment</label>
+        <input id="course-enroll" type="number" min="1" required />
+
+        <label for="course-prof">Professor</label>
+        <select id="course-prof" required>
+            <option value="" disabled selected>Select professor</option>
+        </select>
+
+        <label for="course-dept">Department</label>
+        <input type="text" id="course-dept" required>
+
+
+        <button id="add-course-btn">Add Course</button>
+
+        <div class="upload-box">
+            <label>Upload Courses JSON:</label>
+            <input type="file" id="course-json" accept="application/json" />
+        </div>
+
+        <div class="list-title">Courses:</div>
+        <div id="course-list" class="list-box"></div>
+    </fieldset>
+
+    <fieldset class="block">
+        <legend>Load Full Problem JSON</legend>
+
+        <label>Upload Problem JSON:</label>
+        <input type="file" id="full-json" accept="application/json" />
+    </fieldset>
+
+    <button id="solve-btn">SOLVE</button>
+
+    <div id="status"></div>
+
+    <div id="violations" class="hidden"></div>
+    <div id="explanations" class="hidden"></div>
+    <div id="timetable-grid" class="hidden"></div>
+
+
+
+
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
