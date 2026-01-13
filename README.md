@@ -57,10 +57,11 @@ The intelligence of this project lies in its resilient, multi-stage approach. Th
     ```
 3.  **Launch the Server**
     ```bash
-    uvicorn main:app --reload
+    uvicorn backend.main:app --reload
     ```
 4.  **Open the Application**
     *   Navigate to `http://127.0.0.1:8000/` in your web browser.
 
 ---
+
 
