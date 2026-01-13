@@ -3,8 +3,8 @@ import copy
 import math
 from typing import Dict, List, Tuple, Any
 
-from models import Schedule
-from constraints import get_hard_constraint_violations, calculate_happiness_score
+from .models import Schedule
+from .constraints import get_hard_constraint_violations, calculate_happiness_score
 
 AllData = Dict[str, List[Any]]
 

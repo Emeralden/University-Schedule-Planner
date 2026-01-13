@@ -1,5 +1,5 @@
 from typing import List, Dict, Any, Optional, Tuple
-from models import Schedule
+from .models import Schedule
 import re
 
 AllData = Dict[str, List[Any]]

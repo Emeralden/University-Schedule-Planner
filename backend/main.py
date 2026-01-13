@@ -4,8 +4,8 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from typing import List, Dict, Any
 
-from models import TimeSlot, Professor, Room, Course, Schedule
-from solver import solve_and_optimize_schedule
+from .models import TimeSlot, Professor, Room, Course, Schedule
+from .solver import solve_and_optimize_schedule
 
 app = FastAPI(
     title="University Schedule Planner",
