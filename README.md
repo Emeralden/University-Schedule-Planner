@@ -1,5 +1,9 @@
 # University Schedule Planner
 
+[![Live App](https://img.shields.io/badge/Live-App-brightgreen?style=for-the-badge)](https://university-schedule-planner.onrender.com/)
+<img width="1165" height="862" alt="image" src="https://github.com/user-attachments/assets/f8cd5b8b-6472-4c0c-a958-d31caaaf6c77" />
+
+
 An intelligent, full-stack scheduling application that uses a hybrid AI solver to tackle the NP-hard problem of university course timetabling. This project finds not just a *valid* schedule, but an *optimal* one, balancing a dense network of real-world constraints.
 
 ---
